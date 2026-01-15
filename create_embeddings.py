@@ -47,10 +47,9 @@ print("\n========== CHUNK 1 ==========")
 print(chunk_1)
 print("\n========== CHUNK 2 ==========")
 print(chunk_2)
-embedding_chunk_1 = embeddings.embed_query(chunk_1)
 
 print("\n========== EMBEDDING FOR CHUNK 1 ==========")
-print("Vector length:", len(embedding_chunk_1))
+embedding_chunk_1 = embeddings.embed_query(chunk_1)
 print("First 10 values:", embedding_chunk_1[:10])
 
 
