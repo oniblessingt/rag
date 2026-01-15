@@ -23,15 +23,6 @@ vectorstore = FAISS.load_local(
     allow_dangerous_deserialization=True
 )
 
-# Create retriever
-retriever = vectorstore.as_retriever(
-    search_type="similarity",
-    search_kwargs={"k": 3}
-)
-
-# -----------------------------
-# Function to answer questions
-# -----------------------------
 def answer_question(query):
     # Retrieve relevant documents
     results = vectorstore.similarity_search(query, k=3)
