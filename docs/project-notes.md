@@ -1,0 +1,3 @@
+# Notes
+
+Project cleanup notes.
